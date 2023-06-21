@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-image: url(img/backImages.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 38vh;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 44.994px 8.916vw 0;
+}
+.menu {
+  margin-left: -28.743vw;
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 0.892vw 25px;
+}
+.menu .menu1 {
+  color: #ffffff;
+  font-size: 1.235vw;
+  margin-right: 2.058vw;
+}
+.menu .menu2{
+  color: #ffffff;
+  font-size: 1.235vw;
+  margin-right: 2.058vw;
+}
+.menu .menu3{
+  color: #ffffff;
+  font-size: 1.235vw;
+}
+.menu .menu3 select{
+  border: none;
+  color: #ffffff;
+  background: none;
+}
+.menu .menu3 option{
+  background-color: gray;
+}
+.burger-button {
+  display: none;
+}
+.navRight .login {
+  margin-left: 1.029vw;
+}
+.logo {
+  font-family: "Gilroy-Bold";
+  font-size: 2.058vw;
+  color: #ffffff;
+}
+.navRight button {
+  padding: 0.96vw 1.92vw;
+  background: radial-gradient(
+    100% 100% at 0% 0%,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  box-shadow: inset -2.41843px -2.41843px 120.921px rgba(255, 255, 255, 0.02);
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-family: "Gilroy-Medium";
+  font-size: 1.235vw;
+}
+
+.slider-container {
+  width: 93%;
+  overflow: hidden;
+  padding: 0 0 0 6.859vw;
+  margin-bottom: 1.372vw;
+  display: flex;
+  align-items: center;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 2.058vw;
+}
+.prev-btn,
+.next-btn {
+  position: absolute;
+  transform: translateY(-50%);
+  padding: 15px 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+}
+
+.prev-btn {
+  left: 8.299vw;
+}
+
+.next-btn {
+  right: 15px;
+}
+.slide span {
+  color: #ffffff;
+  font-size: 1.5vw;
+}
+.slide img {
+  width: 20.37vw;
+  margin-bottom: 3px;
+}
+/*  */
+.slider-container2 {
+  width: 93%;
+  overflow: hidden;
+  padding: 0 0 0 6.859vw;
+  display: flex;
+  align-items: center;
+}
+
+.slider2 {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 2.058vw;
+}
+.prev-btn2,
+.next-btn2 {
+  position: absolute;
+  transform: translateY(-50%);
+  padding: 15px 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+}
+
+.prev-btn2 {
+  left: 8.299vw;
+}
+
+.next-btn2 {
+  right: 10px;
+}
+.slide2 span {
+  color: #ffffff;
+  font-size: 1.5vw;
+}
+.slide2 img {
+  width: 20.37vw;
+  margin-bottom: 3px;
+}
+.commonSlider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 62vh;
+}
+button {
+  cursor: pointer;
+}
+.bottomGradient {
+  background: linear-gradient(
+    179.83deg,
+    #1f1f1f 0.14%,
+    rgba(34, 34, 34, 0.369792) 62.97%,
+    rgba(34, 34, 34, 0) 99.84%
+  );
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+@media screen and (max-width: 1024px) {
+  .prev-btn img,
+  .next-btn img,
+  .prev-btn2 img,
+  .next-btn2 img {
+    width: 10px;
+  }
+  .prev-btn,
+  .next-btn,
+  .prev-btn2,
+  .next-btn2 {
+    padding: 10px 15px;
+  }
+  .menu {
+    margin-left: -26vw;
+  }
+  .logo{
+    font-size: 28px;
+  }
+  .menu .menu1{
+    font-size: 14px;
+  }
+  .menu .menu2{
+    font-size: 14px;
+  }
+  .menu .menu3{
+    font-size: 14px;
+  }
+  .navRight button{
+    font-size: 14px;
+  }
+  .slide img, .slide2 img{
+    width: 22vw;
+  }
+  .slide span, .slide2 span{
+    font-size: 18px;
+  }
+  .slider-container{
+    margin-bottom: 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .burger-button button{
+    border: none;
+    background: none;
+  }
+  .burger-button img{
+    width: 30px;
+  }
+  .logo {
+    display: block;
+    z-index: 999;
+  }
+  .navRight {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  .burger-button {
+    display: block;
+  }
+
+  .menu.active {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 78%;
+    height: 100%;
+    background-color: black;
+    /* opacity: 0.9; */
+    z-index: 998;
+  }
+  .menu.active .menu1{
+    position: absolute;
+    left: 35vw;
+    top: 120px;
+  }
+  .menu.active .menu2{
+    position: absolute;
+    left: 35vw;
+    top: 155px;
+  }
+  .menu.active .menu3{
+    position: absolute;
+    left: 35vw;
+    bottom: 120px;
+  }
+  .slide img, .slide2 img{
+    width: 200px;
+  }
+  .menu3 option{
+    position: absolute;
+    top: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slider-container2{
+    display: none;
+  }
+  .slide img{
+    width: 70.576vw;
+  }
+}
